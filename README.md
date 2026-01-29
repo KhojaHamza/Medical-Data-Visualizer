@@ -1,8 +1,8 @@
-Medical Data Visualizer
+### Medical Data Visualizer
 
 This project analyzes a medical examination dataset and creates visualizations to help understand the relationship between health metrics and cardiovascular disease.
 
-📝 Description
+### 📝 Description
 
 The project includes two main functions:
 
@@ -28,7 +28,7 @@ Plots a heatmap with only the upper triangle to avoid duplication.
 
 Saves the figure as heatmap.png.
 
-📂 Files
+### 📂 Files
 
 medical_examination.csv – Dataset with patient health metrics
 
