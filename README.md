@@ -1,14 +1,39 @@
-# Medical-Data-Visualizer
-This project analyzes and visualizes medical examination data using **Python**, **Pandas**, **Matplotlib**, and **Seaborn**. The dataset includes patient body measurements, blood test results, lifestyle choices, and cardiac disease outcomes.
+Medical Data Visualizer
 
-### Features
-- Data cleaning and preprocessing
-- Exploratory data analysis (EDA)
-- Data visualization with Matplotlib and Seaborn
-- Statistical calculations to explore health trends
-### Dataset
-Dataset includes patient info: height, weight, BMI, cholesterol, glucose, smoking habits, and cardiac disease status.
-### How to Run
-1. Clone the repo: `git clone <repo-link>`
-2. Install dependencies: `pip install pandas matplotlib seaborn`
-3. Run the notebook or Python scripts
+This project analyzes a medical examination dataset and creates visualizations to help understand the relationship between health metrics and cardiovascular disease.
+
+📝 Description
+
+The project includes two main functions:
+
+draw_cat_plot()
+
+Generates a categorical bar plot showing counts of patients with cardiovascular disease (cardio=1) and without (cardio=0) for features like cholesterol, glucose, alcohol consumption, smoking, activity, and overweight.
+
+Normalizes the data so that 0 is always "good" and 1 is always "bad".
+
+Saves the figure as catplot.png.
+
+draw_heat_map()
+
+Cleans the dataset by removing incorrect or extreme values:
+
+Diastolic pressure higher than systolic
+
+Height or weight outside the 2.5th–97.5th percentiles
+
+Computes a correlation matrix of the cleaned dataset.
+
+Plots a heatmap with only the upper triangle to avoid duplication.
+
+Saves the figure as heatmap.png.
+
+📂 Files
+
+medical_examination.csv – Dataset with patient health metrics
+
+medical_data_visualizer.py – Python script with plotting functions
+
+catplot.png – Example output of categorical plot
+
+heatmap.png – Example output of heatmap
